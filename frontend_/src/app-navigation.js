@@ -17,7 +17,7 @@ export const navigation = [
         path: '/grupos'
       }, {
         text: 'Tipos de curso',
-        path: '/course_type'
+        path: '/tipos'
       }
     ]
   }
