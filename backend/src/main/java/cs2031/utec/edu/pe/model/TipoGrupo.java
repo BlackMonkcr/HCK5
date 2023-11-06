@@ -1,12 +1,11 @@
 package cs2031.utec.edu.pe.model;
 
 import java.util.List;
-import java.util.Set;
-import jakarta.annotation.Generated;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 
 @Entity
 public class TipoGrupo {
@@ -15,7 +14,9 @@ public class TipoGrupo {
     private Long id;
 
     private String name;
-    pri
+
+    @OneToMany
+    private List<Grupo> grupos;
 
     public TipoGrupo(){}
     public TipoGrupo(Long id, String name){
@@ -24,8 +25,14 @@ public class TipoGrupo {
     }
     
     public Long getId(){return id;}
-    public String getNmae(){return name;}
+    public String getName(){return name;}
+    public List<Grupo> getGrupos(){return grupos;}
+
 
     public void setId(Long id){this.id=id;}
     public void setName(String name){this.name=name;}
+    public void setGroupss(List<Grupo> grupos) {
+        this.grupos = grupos;
+    }
+
 }

@@ -36,14 +36,14 @@ public class TipoGrupoService {
         return tipoGrupoRepository.save(tipoGrupo);
     }
 
-    public Set<Grupo> getTipoGrupo(Long id) {
-        return tipoGrupoRepository.findById(id).orElse(null).getGroups();
+    public List<Grupo> getTipoGrupo(Long id) {
+        return tipoGrupoRepository.findById(id).orElse(null).getGrupos();
     }
 
     public TipoGrupo addGroupToTipo(Long id, Long groupId) {
         TipoGrupo tipoGrupo = tipoGrupoRepository.findById(id).orElse(null);
         if (tipoGrupo != null) {
-            tipoGrupo.getGroups().add(groupService.getGroupById(groupId));
+            tipoGrupo.getGrupos().add(groupService.getGrupoById(groupId));
             return tipoGrupoRepository.save(tipoGrupo);
         } else {
             return null;

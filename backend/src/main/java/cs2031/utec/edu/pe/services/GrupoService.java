@@ -1,6 +1,7 @@
 package cs2031.utec.edu.pe.services;
 
 import cs2031.utec.edu.pe.model.Grupo;
+import cs2031.utec.edu.pe.model.Person;
 import cs2031.utec.edu.pe.repositories.GrupoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,5 +36,9 @@ public class GrupoService {
     public void delete(Long id){
         Grupo person;
         person = repository.findById(id).get();
+    }
+
+    public Grupo getGrupoById(Long id) {
+        return repository.findById(id).orElse(null);
     }
 }
