@@ -40,7 +40,7 @@ public class TipoGrupoService {
         return tipoGrupoRepository.findById(id).orElse(null).getGroups();
     }
 
-    public Grupo addGroupToTipo(Long id, Long groupId) {
+    public TipoGrupo addGroupToTipo(Long id, Long groupId) {
         TipoGrupo tipoGrupo = tipoGrupoRepository.findById(id).orElse(null);
         if (tipoGrupo != null) {
             tipoGrupo.getGroups().add(groupService.getGroupById(groupId));

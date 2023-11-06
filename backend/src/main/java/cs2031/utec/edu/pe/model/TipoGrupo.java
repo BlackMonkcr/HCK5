@@ -15,6 +15,7 @@ public class TipoGrupo {
     private Long id;
 
     private String name;
+    pri
 
     public TipoGrupo(){}
     public TipoGrupo(Long id, String name){
