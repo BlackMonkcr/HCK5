@@ -1,5 +1,7 @@
 package cs2031.utec.edu.pe.model;
 
+import java.util.List;
+import java.util.Set;
 import jakarta.annotation.Generated;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
