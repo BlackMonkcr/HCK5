@@ -8,13 +8,17 @@ export const navigation = [
     text: 'Admin',
     icon: 'folder',
     items: [
-      
+
       {
         text: 'Personas',
         path: '/personas'
       }, {
         text: 'Grupos',
         path: '/grupos'
+      },
+      {
+        text: 'Curso_Tipo',
+        path: '/curso-tipo'
       }
     ]
   }
