@@ -19,7 +19,7 @@ const routes = [
         element: GruposPage
     },
     {
-        path: '/course_type',
+        path: '/tipos',
         element: CourseTypePage
     }
 ];

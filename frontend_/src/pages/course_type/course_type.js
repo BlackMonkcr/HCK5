@@ -5,7 +5,7 @@ import CustomStore from 'devextreme/data/custom_store';
 const store = new CustomStore({
   key: 'id',
   load(loadOptions) {
-      return fetch(`http://localhost:8080/course_type`)
+      return fetch(`http://localhost:8080/tipos`)
     .then((response) => response.json())
     .then((data) => {
       console.log(data); // Muestra el contenido de data en la consola
