@@ -48,8 +48,8 @@ public class TipoGrupoController {
     }
 
     @GetMapping("/group/{id}") //ns donde deberia estar
-    public ResponseEntity<Set<Grupo>> getGroupByTipoGrupoId(@PathVariable Long id) {
-        Set<Grupo> groups = tipoGrupoService.getTipoGrupo(id);
+    public ResponseEntity<List<Grupo>> getGroupByTipoGrupoId(@PathVariable Long id) {
+        List<Grupo> groups = tipoGrupoService.getTipoGrupo(id);
         return ResponseEntity.ok(groups);
     }
     
