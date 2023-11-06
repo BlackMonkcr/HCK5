@@ -8,7 +8,7 @@ export const navigation = [
     text: 'Admin',
     icon: 'folder',
     items: [
-      
+
       {
         text: 'Personas',
         path: '/personas'
