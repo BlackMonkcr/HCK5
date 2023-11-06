@@ -15,6 +15,9 @@ export const navigation = [
       }, {
         text: 'Grupos',
         path: '/grupos'
+      }, {
+        text: 'Tipos de curso',
+        path: '/course_type'
       }
     ]
   }

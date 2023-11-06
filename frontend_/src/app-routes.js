@@ -1,10 +1,10 @@
-import { HomePage, TasksPage, ProfilePage, GruposPage } from './pages';
+import { HomePage, PersonasPage, ProfilePage, GruposPage, CourseTypePage } from './pages';
 import { withNavigationWatcher } from './contexts/navigation';
 
 const routes = [
     {
-        path: '/tasks',
-        element: TasksPage
+        path: '/personas',
+        element: PersonasPage
     },
     {
         path: '/profile',
@@ -17,6 +17,10 @@ const routes = [
     {
         path: '/grupos',
         element: GruposPage
+    },
+    {
+        path: '/course_type',
+        element: CourseTypePage
     }
 ];
 
